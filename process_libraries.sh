@@ -17,6 +17,4 @@ do
     # Step 3: Convert trimmed fastq to fasta using seqtk
     seqtk seq -A ${library}_trimmed.fq > ${library}_trimmed.fasta
 
-    # Step 4: Optionally remove the trimmed fastq file to save space
-    rm -f ${library}_trimmed.fq
 done
